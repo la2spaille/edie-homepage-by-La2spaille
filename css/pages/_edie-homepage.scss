@@ -1,0 +1,228 @@
+.w-intro-wrapper {
+    strong {
+        color: $blue;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    h1:first-child {
+        padding: 16px 0 0;
+    }
+    img {
+        border-radius: 18px;
+    }
+    p {
+        color: $lightGray;
+        padding: 42px 0 0;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        max-width: 350px;
+    }
+}
+.w-hero-img {
+    margin: 40px -225px;
+}
+.w-content-section-heading {
+    display: inline-block;
+    h3 {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 54px;
+        
+    }
+    strong {
+        color: $pink;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    > span {
+        width: 200px;
+        color: $lightGray;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.w-services-card-wrapper {
+    display: flex;
+    padding: 40px 0 0;
+    justify-content: space-between;
+    gap: 40px;
+    i::after {
+        font-size: 24px;
+        color: $white;
+    }
+    .w-services-card:first-child {
+        i {
+            background: $blue ;
+            &::after {
+                content: '\e3c9';
+            }
+        }
+    }
+    .w-services-card:last-child {
+        i {
+            background: $pink ;
+            &::after {
+                content: '\e896';
+            }
+        }
+    }
+    .w-services-card:nth-child(2) {
+        i {
+            background: $green;
+            &::after {
+                content: '\e86f';
+            }
+        }
+    }
+}
+.w-services-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px;
+    border-radius: 24px;
+    box-shadow: 0px 10px 30px transparent;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+        a {
+            color: $white;
+            background: $blue;
+        }
+    }
+    i {
+        display: flex;
+        height: 67px;
+        width: 67px;
+        margin: 45px 0 0;
+        border-radius: 12px;
+    }
+    h3 {
+        padding: 35px 0 0;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    p {
+        padding: 25px 0 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.w-our-works-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12px 0 0;
+    gap: 0 20px;
+    .w-our-works-card:nth-child(2n + 1) {
+        margin: 175px 0 0;
+    }
+}
+.w-our-works-card {
+    max-width: 49%;
+    display: flex;
+    flex-direction: column;
+    img {
+        border-radius: 12px;
+    }
+    span {
+        padding: 20px 0 0;
+        color: $veryLightgray;
+    }
+    strong {
+        color: $darkGray;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+.w-our-works-cta {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    a {
+        display: flex;
+        align-items: center;
+        color: $blue;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        &::after {
+            content: '\e941';
+            padding: 0 0 0 15px;
+        }
+    }
+}
+.w-team-gallery-wrapper  {
+    display: inline-grid;
+    position: absolute;
+    right: 0;
+    top: 0;
+    gap: 25px;
+    grid-template: auto auto / auto auto;
+    div {
+        transition: 0.7s;
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+    div:first-child {
+        margin: 125px 0;
+        width: 320px;
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+    }
+    div:nth-child(2) {
+        width: 260px;
+    }
+    div:last-child {
+        width: 290px;
+    }
+    img {
+        border-radius: 24px;
+    }
+    
+}
+.w-quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 390px 0 0;
+    p {
+        max-width: 800px;
+        color: $darkGray;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
+.w-author-card {
+    display: flex;
+    padding: 45px 0 0;
+    gap: 30px;
+    img {
+        width: 82px;
+        border-radius: 12px;
+    }
+}
+.w-author-info {
+    padding: 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    strong {
+        color: $darkGray;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    span {
+        color: $veryLightgray;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
