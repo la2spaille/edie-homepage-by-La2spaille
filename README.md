@@ -29,8 +29,8 @@
 
 ## Overview
 
-![screenshot-desktop-design]("design/desktop-design.png.png")
-![screenshot-mobile-design]("design/desktop-design.png.png")
+![screenshot-desktop-design](design/desktop-design.png)
+![screenshot-mobile-design](design/desktop-design.png)
 
 ### Built With
 
