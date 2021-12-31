@@ -1,5 +1,5 @@
 
-<h1 align="center">my-gallery-by-La2spaille</h1>
+<h1 align="center">Edie-homepage-by-La2spaille</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -7,19 +7,20 @@
 
 <div align="center">
   <h3>
-    <a href="https://https://my-gallery-by-La2spaillevercel.app">
+    <a href="https://edie-homepage-by-La2spaillevercel.app">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/la2spaille/my-gallery-by-La2spaille">
+    <a href="https://github.com/la2spaille/edie-homepage-by-La2spaille">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I">
+    <a href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0">
       Challenge
     </a>
   </h3>
 </div>
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -36,10 +37,11 @@
 
 - HTML
 - CSS
+- JavaScript
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0) was to build an application to complete the given user stories.
 
 ## Contact
 

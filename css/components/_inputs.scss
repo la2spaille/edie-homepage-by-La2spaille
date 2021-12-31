@@ -1,0 +1,31 @@
+.w-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    strong {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: $OSctaTxt;
+    }
+    label {
+        border-radius: 12px;
+        width: 350px;
+        height: 55px;
+        background: $inputBgGray;
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+        input {
+            color: $inputTxtGray;
+            font-weight: 500;
+            padding: 17px;
+            background: transparent;
+            &::placeholder {
+                color: $inputTxtGray;
+                font-weight: 500;
+            }
+        }
+    }
+    
+}

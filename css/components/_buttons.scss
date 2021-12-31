@@ -10,3 +10,14 @@
         line-height: 24px;
     }
 }
+button {
+    display: flex;
+    align-items: center;
+    padding: 0 27.5px;
+    background: $blue;
+    color: $white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 12px;
+}

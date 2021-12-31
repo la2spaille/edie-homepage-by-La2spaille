@@ -1,5 +1,5 @@
 .w-intro-wrapper {
-    strong {
+    > strong {
         color: $blue;
         font-weight: 500;
         font-size: 18px;
@@ -18,6 +18,9 @@
         font-size: 18px;
         line-height: 27px;
         max-width: 350px;
+    }
+    .w-input-wrapper {
+        padding: 40px 0 0;
     }
 }
 .w-hero-img {
@@ -123,7 +126,7 @@
     }
 }
 .w-our-works-card {
-    max-width: 49%;
+    max-width: calc(50% - 10px) ;
     display: flex;
     flex-direction: column;
     img {

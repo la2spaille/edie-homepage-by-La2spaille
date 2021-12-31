@@ -5,19 +5,42 @@
 @import "./layouts/sections";
 @import "./layouts/footer";
 @import "./components/buttons";
+@import "./components/inputs";
 @import "./pages/edie-homepage";
 @media (max-width:1280px) {
+    .w-header-nav {
+        nav {
+            gap: 50px;
+        }
+    }
+    #l-intro-section {
+        padding: 0 150px;
+    }
+    .w-hero-img {
+        margin: 40px -100px;
+    }
+    #l-content-section {
+        padding: 0 50px;
+        section {
+            position: relative;
+            padding: 150px 0 0;
+        }
+        #l-clients-section {
+            margin: 150px 0 0;
+            padding: 130px 0 0;
+        }
+    }
+    .w-our-works-card-wrapper {
+        .w-our-works-card:nth-child(2n + 1) {
+            margin: 125px 0 0;
+        }
+    }
+    .w-footer-wrapper {
+        padding: 0 50px;
+    }
+    
 }
 @media (max-width: 1000px) {
-    main {
-        padding: 95px 0 100px;
-    }
-    header {
-        padding: 12.5px 0;
-    }
-    .w-header-logo {
-        padding: 0 10px;
-    }
     .w-header-nav {
         display: none;
     }
@@ -25,79 +48,52 @@
         display: flex;
         width: 30px;
         height: 30px;
-        padding:  0 12.5px;
+        padding:  0 50px;
         i::after {
             content: '\e941';
         }
     }
     #l-intro-section {
-        padding: 0 40px;
-    }
-    h1 {
-        font-size: 24px;
-        line-height: 36px;
-    }
-    .w-intro-wrapper {
-        strong {
-            font-size: 12px;
-            line-height: 18px;
-        }
-        h1:first-child {
-            padding: 0;
-        }
-        p {
-            padding: 33px 0 0;
-            font-size: 12px;
-            line-height: 18px;
-        }
+        padding: 0 150px;
     }
     .w-hero-img {
-        margin: 15px -30px;
+        margin: 40px -100px;
     }
     #l-content-section {
-        padding: 0 10px;
-
-    }
-    .w-content-section-heading {
-        h3 {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 36px;
+        padding: 0 100px;
+        section {
+            position: relative;
+            padding: 100px 0 0;
         }
-        strong {
-            font-size: 18px;
-            line-height: 27px;
-        }
-        > span {
-            font-size: 16px;
-            line-height: 24px;
+        #l-clients-section {
+            margin: 150px 0 0;
+            padding: 130px 0 0;
         }
     }
     .w-services-card-wrapper {
         flex-direction: column;
         flex-wrap: nowrap;
-        padding: 0 5px;
+        padding: 40px 0;
     }
     .w-our-works-card-wrapper {
         flex-direction: column;
         align-items: stretch;
-        gap: 20px;
+        gap: 25px;
     }
     .w-our-works-card {
-        margin: 0 !important;
-        max-width: 100%;
+        margin: 45px 0 0 !important;
+        width: 100%;
+        max-width: calc(100% - 10px);
     }
     .w-our-works-cta {
+        position: relative;
+        margin: 45px 0 0;
         left: 0 !important;
-        bottom: -35px;
-    }
-    #l-content-section {
-        #l-clients-section {
-            margin: 0;
-        }
     }
     .w-team-gallery-wrapper  {
         position: relative;
+        padding: 35px 0  0;
+        margin: 0 15px 0 50px;
         gap: 10px;
         div:first-child {
             margin: 65px 0;
@@ -114,38 +110,50 @@
         }
         
     }
-    .w-quote-wrapper {
-        p {
+    .w-footer-wrapper {
+        padding: 0 50px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .w-content-section-heading {
+        h3 {
+            font-weight: 500;
             font-size: 24px;
             line-height: 36px;
         }
+        strong {
+            font-size: 18px;
+            line-height: 27px;
+        }
+        > span {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
-    footer {
-        padding: 40px 0 195px;
-    }
-    .w-footer-wrapper {
-        padding: 0 40px;
-        flex-direction: column;
-    }
-    .w-footer-nav {
-        padding: 0;
-    }
-    .w-identity-wrapper {
-        padding: 60px 0 0;
-    }
-}
-@media (max-width: 450px) {
     main {
         padding: 95px 0 100px;
     }
     header {
         padding: 12.5px 0;
     }
+    button {
+        padding: 0 21px;
+    }
     .w-header-logo {
         padding: 0 10px;
-    }
-    .w-header-nav {
-        display: none;
     }
     .w-menu-btn {
         display: flex;
@@ -159,14 +167,114 @@
     .w-hero-img {
         margin: 15px -30px;
     }
+    .w-input-wrapper {
+        label {
+            height: 47.5px;
+            width: 290px;
+        }
+    }
     #l-content-section {
         padding: 0 10px;
-
+    }
+    .w-content-section-heading {
+        padding: 0 40px;
+    }
+    #l-clients-section {
+        .w-content-section-heading {
+            padding: 0;
+        }
+    }
+    .w-menu-btn {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        padding:  0 12.5px;
+        i::after {
+            content: '\e941';
+        }
+    }
+    .w-intro-wrapper {
+        strong {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        h1:first-child {
+            padding: 0;
+        }
+        p {
+            padding: 33px 0 0;
+            font-size: 12px;
+            line-height: 18px;
+        }
     }
     footer {
         padding: 40px 0 195px;
     }
     .w-footer-wrapper {
         padding: 0 40px;
+    }
+    .w-quote-wrapper {
+        margin: 100px 0 0;
+        p {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    main {
+        padding: 95px 0 100px;
+    }
+    header {
+        padding: 12.5px 0;
+    }
+    .w-header-logo {
+        padding: 0 10px;
+    }
+    
+    #l-intro-section {
+        padding: 0 40px;
+    }
+    
+    
+    .w-hero-img {
+        margin: 15px -30px;
+    }
+    #l-content-section {
+        padding: 0 10px;
+
+    }
+    
+    
+    #l-content-section {
+        section {
+            padding: 100px 0 0;
+        }
+        #l-clients-section {
+            margin: 0;
+            padding: 100px 0 0;
+        }
+    }
+    
+    .w-quote-wrapper {
+        margin: 100px 0 0;
+        p {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    footer {
+        padding: 40px 0 195px;
+        .w-input-wrapper {
+            padding: 65px 0 0;
+        }
+    }
+    .w-footer-wrapper {
+        padding: 0 40px;
+        flex-direction: column;
+    }
+    .w-footer-nav {
+        padding: 0;
+    }
+    .w-identity-wrapper {
+        padding: 60px 0 0;
     }
 }
